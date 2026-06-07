@@ -439,6 +439,7 @@ class Config:
         
         .stTextInput > div > div > input {
             background: rgba(255, 255, 255, 0.95);
+            color: black !important;
             border-radius: 10px;
             border: 1px solid rgba(103, 126, 234, 0.3);
             padding: 0.75rem 1rem;
@@ -446,6 +447,7 @@ class Config:
         
         .stTextArea > div > div > textarea {
             background: rgba(255, 255, 255, 0.95);
+            color: black !important;
             border-radius: 10px;
             border: 1px solid rgba(103, 126, 234, 0.3);
             padding: 1rem;
@@ -472,6 +474,11 @@ class Config:
         
         ::-webkit-scrollbar-thumb:hover {
             background: linear-gradient(45deg, #5a6fd8, #6b46a3);
+        }
+
+        .stTextInput input::placeholder,
+        .stTextArea textarea::placeholder {
+            color: #666 !important;
         }
     </style>
     """
